@@ -46,27 +46,34 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="查看当前已安装的所有镜像1docker images23REPOSITORY              TAG                 IMAGE ID            CREATED             VIRTUAL SIZE4busybox                 latest              c51f86c28340        4 weeks ag">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cheatsheet for Docker">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;09&#x2F;cheatsheet-for-Docker&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="查看当前已安装的所有镜像1docker images23REPOSITORY              TAG                 IMAGE ID            CREATED             VIRTUAL SIZE4busybox                 latest              c51f86c28340        4 weeks ag">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-12-09T04:32:23.000Z">
+<meta property="article:modified_time" content="2019-12-09T11:01:14.619Z">
 <meta property="article:author" content="Xiao Ziyang">
+<meta property="article:tag" content="Docker">
+<meta property="article:tag" content="cloud">
+<meta property="article:tag" content="cheatsheet">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2019/12/09/cheatsheet-for-Docker/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome: false,
+    isPost: true
   };
 </script>
 
-  <title>Hexo</title>
+  <title>cheatsheet for Docker | Hexo</title>
   
 
 
@@ -161,10 +168,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-cn">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-cn">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/09/cheatsheet-for-Docker/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -178,8 +185,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/09/cheatsheet-for-Docker/" class="post-title-link" itemprop="url">cheatsheet for Docker</a>
+          cheatsheet for Docker
         </h1>
 
         <div class="post-meta">
@@ -215,7 +221,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <a id="more"></a>
+        <a id="more"></a>
 <h4 id="查看当前已安装的所有镜像"><a href="#查看当前已安装的所有镜像" class="headerlink" title="查看当前已安装的所有镜像"></a>查看当前已安装的所有镜像</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">docker images</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">REPOSITORY              TAG                 IMAGE ID            CREATED             VIRTUAL SIZE</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">busybox                 latest              c51f86c28340        4 weeks ago         1.109 MB</span></pre></td></tr></table></figure>
 
 <h4 id="查看当前正在运行的容器"><a href="#查看当前正在运行的容器" class="headerlink" title="查看当前正在运行的容器"></a>查看当前正在运行的容器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">docker ps</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES</span></pre></td></tr></table></figure>
@@ -230,24 +236,31 @@
 
 <h4 id="运行一个容器，并且运行完后直接释放掉"><a href="#运行一个容器，并且运行完后直接释放掉" class="headerlink" title="运行一个容器，并且运行完后直接释放掉"></a>运行一个容器，并且运行完后直接释放掉</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">docker run --rm prakhar1989&#x2F;static-site</span></pre></td></tr></table></figure>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/Docker/" rel="tag"># Docker</a>
+              <a href="/tags/cloud/" rel="tag"># cloud</a>
+              <a href="/tags/cheatsheet/" rel="tag"># cheatsheet</a>
+          </div>
+
+        
+
+
+        
       </footer>
+    
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -298,6 +311,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#查看当前已安装的所有镜像"><span class="nav-number">1.</span> <span class="nav-text">查看当前已安装的所有镜像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看当前正在运行的容器"><span class="nav-number">2.</span> <span class="nav-text">查看当前正在运行的容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看所有容器"><span class="nav-number">3.</span> <span class="nav-text">查看所有容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#释放容器"><span class="nav-number">4.</span> <span class="nav-text">释放容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#构建一个容器"><span class="nav-number">5.</span> <span class="nav-text">构建一个容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#交互式地运行一个容器"><span class="nav-number">6.</span> <span class="nav-text">交互式地运行一个容器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运行一个容器，并且运行完后直接释放掉"><span class="nav-number">7.</span> <span class="nav-text">运行一个容器，并且运行完后直接释放掉</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
